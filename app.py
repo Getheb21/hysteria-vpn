@@ -33,10 +33,10 @@ KEY_PATH = CERT_DIR / "key.pem"
 SB_JSON_PATH = SB_DIR / "sb.json"
 
 # === Твои данные (ЗАДАЙ ТУТ!) ===
-HOST = os.environ.get("SB_HOST", "node.waifly.com")       # адрес сервера
+HOST = os.environ.get("SB_HOST", "web-production-ae705.up.railway.app")       # адрес сервера
 UUID = os.environ.get("SB_UUID", "0673bdd5-d0ce-4d0f-8b51-8fff848024eb")  # идентификатор клиента
-PORT = int(os.environ.get("SB_PORT", "27562"))                      # порт
-SNI = os.environ.get("SB_SNI", "time.android.com")        # SNI-домен
+PORT = int(os.environ.get("SB_PORT", "443"))                      # порт
+SNI = os.environ.get("SB_SNI", "business.whatsapp.com")        # SNI-домен
 
 # === Настройки маскировки/обфускации ===
 OBFS_PWD = os.environ.get("SB_OBFS_PWD") or secrets.token_urlsafe(24)
